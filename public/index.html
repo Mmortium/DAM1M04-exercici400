@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+<html lang="ca">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="estils.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet" />
-    <script src="script.js" defer></script>
-    <title>Javascript DOM</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 400: Sliding Puzzle</title>
+    <link rel="stylesheet" href="/public/estil.css">
+</head>
+<body>
 
-  <body onload="init()">
-    <h1>Exemple</h1>
-
-    <div class="tauler">
-      <!-- Continguts generats al JavaScript -->
-       <img src="./img/esdla.png" alt="the lord of the rings" width="300"/>
+    <h1>Sliding Puzzle 4x3</h1>
+    
+    <div id="controls">
+      <div id="info-partida">Moviments: <span id="comptador">0</span></div>
+      <button id="btn-reset">Reiniciar Joc</button>
     </div>
 
-    <div class="controls">
-      <button id="refReset">Reset</button>
-      <span id="refInfo"></span>
-    </div>
-  </body>
+    <div id="puzzle-container"></div>
+
+    <h2 id="missatge"></h2>
+
+    <script src="script.js"></script>
+</body>
 </html>

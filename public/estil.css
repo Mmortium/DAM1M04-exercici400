@@ -1,0 +1,100 @@
+/* estils.css - VERSIÓ COMPLETA PER A 3x4 */
+
+:root {
+    --mida-peca: 100px;
+    --cols: 4;
+    --files: 3;
+    /* L'amplada total és 100 * 4 = 400px, l'alçada 100 * 3 = 300px */
+    --amplada-total: calc(var(--mida-peca) * var(--cols));
+    --alçada-total: calc(var(--mida-peca) * var(--files));
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#controls {
+    text-align: center;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#info-partida {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* CONTENIDOR DEL PUZZLE */
+#puzzle-container {
+    width: var(--amplada-total);
+    height: var(--alçada-total);
+    position: relative;
+    background-color: #bdc3c7; /* Color de la casella buida */
+    border: 6px solid #2c3e50;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* LES PECES */
+.peca {
+    width: var(--mida-peca);
+    height: var(--mida-peca);
+    position: absolute;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.3);
+    
+    /* Imatge de fons */
+    background-image: url('../img/esdla.png');
+    /* IMPORTANT: background-size ha de ser la mida TOTAL de la imatge original */
+    background-size: var(--amplada-total) var(--alçada-total);
+    background-size: 400px 300px; /* Força la imatge a 4x3 */
+    background-repeat: no-repeat;
+    /* Animació del moviment */
+    transition: transform 0.2s ease-out;
+}
+
+.peca:hover {
+    filter: brightness(1.1);
+    z-index: 10; /* Perquè la peça que mous quedi per sobre */
+}
+
+/* MISSATGE DE VICTÒRIA */
+#missatge {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #27ae60;
+    font-weight: bold;
+    height: 40px; /* Evita que el contingut salti quan apareix el text */
+}
