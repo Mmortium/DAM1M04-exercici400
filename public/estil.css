@@ -14,14 +14,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #620000;
+    color: #ffd700;
     margin: 0;
     padding: 20px;
+}
+@font-face {
+    font-family: 'SenyorAnells';
+    src: url('aniron.ttf') format('truetype');
 }
 
 h1 {
     margin-bottom: 10px;
+    font-family: 'SenyorAnells', serif;
+    color: #ffd700; /* Un color daurat */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 #controls {
@@ -43,7 +50,7 @@ button {
     padding: 10px 25px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #3498db;
+    background-color: #010304;
     color: white;
     border: none;
     border-radius: 5px;
@@ -51,7 +58,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #412601;
 }
 
 /* CONTENIDOR DEL PUZZLE */
@@ -59,8 +66,8 @@ button:hover {
     width: var(--amplada-total);
     height: var(--alçada-total);
     position: relative;
-    background-color: #bdc3c7; /* Color de la casella buida */
-    border: 6px solid #2c3e50;
+    background-color: #000000; /* Color de la casella buida */
+    border: 6px solid #9e5700;
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     overflow: hidden;
