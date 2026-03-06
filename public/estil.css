@@ -76,7 +76,7 @@ button:hover {
     border: 1px solid rgba(255,255,255,0.3);
     
     /* Imatge de fons */
-    background-image: url('../img/esdla.png');
+    background-image: url('./img/edsla.png');
     /* IMPORTANT: background-size ha de ser la mida TOTAL de la imatge original */
     background-size: var(--amplada-total) var(--alçada-total);
     background-size: 400px 300px; /* Força la imatge a 4x3 */
