@@ -47,7 +47,7 @@ function crearPecesDOM() {
     }
 }
 
-// AQUESTA FUNCIÓ ET FALTAVA:
+// AQUESTA FUNCIÓ S'EXECUTA QUAN ES CLICA UNA PEÇA, COMPROVA SI ES POT MOURE I ACTUALITZA EL TAULER:
 function clicarPeca(num) {
     if (jocAcabat) return;
 
