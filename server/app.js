@@ -13,11 +13,11 @@ app.use((req, res, next) => {
 });
 
 // Configurar direcció ‘/’ 
-/*
+
 app.get('/', async (req, res) => {
     res.send(`Hello World /`)
 })
-*/
+
 
 // Activar el servidor
 const httpServer = app.listen(port, appListen)
