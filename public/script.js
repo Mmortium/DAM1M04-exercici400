@@ -47,7 +47,7 @@ function crearPecesDOM() {
     }
 }
 
-// AQUESTA FUNCIÓ S'EXECUTA QUAN ES CLICA UNA PEÇA, COMPROVA SI ES POT MOURE I ACTUALITZA EL TAULER:
+/*FUNCIO PER CLICAR PEÇA,SI ES POT MOURE I ACTUALITZA*/
 function clicarPeca(num) {
     if (jocAcabat) return;
 
@@ -115,5 +115,5 @@ function comprovarVictoria() {
     }
 }
 
-// CRIDEM LA FUNCIÓ PER COMENÇAR
+/* CRIDA FUNCIO PER INICIA*/
 init();

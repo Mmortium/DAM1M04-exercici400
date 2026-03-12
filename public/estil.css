@@ -1,4 +1,4 @@
-/* estils.css - VERSIÓ COMPLETA PER A 3x4 */
+/* - VERSIÓ COMPLETA PER A 3x4 */
 
 :root {
     --mida-peca: 100px;
@@ -61,19 +61,19 @@ button:hover {
     background-color: #412601;
 }
 
-/* CONTENIDOR DEL PUZZLE */
+/* PUZZLE */
 #puzzle-container {
     width: var(--amplada-total);
     height: var(--alçada-total);
     position: relative;
-    background-color: #000000; /* Color de la casella buida */
+    background-color: #000000; /* Color casella buida */
     border: 6px solid #9e5700;
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     overflow: hidden;
 }
 
-/* LES PECES */
+/* PECES */
 .peca {
     width: var(--mida-peca);
     height: var(--mida-peca);
@@ -87,7 +87,7 @@ button:hover {
     background-size: var(--amplada-total) var(--alçada-total);
     background-size: 400px 300px; /* Força la imatge a 4x3 */
     background-repeat: no-repeat;
-    /* Animació del moviment */
+    /* moviment */
     transition: transform 0.2s ease-out;
 }
 
